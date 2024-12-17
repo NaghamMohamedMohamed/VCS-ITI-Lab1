@@ -1,0 +1,80 @@
+<!DOCtype html>
+
+<html>
+    <head>
+        <title>
+            GPA Calculator
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: darkred;">GPA Calculator</h1>
+        <h3 style="text-align: center ; color: darkblue;">For Faculty of Computers & AI - Cairo University</h3>
+        <h4 style="color: darkblue; font-size: x-large;  margin-left: 20px;">Student's grades</h4>
+        <p id="text" style="font-size: 130% ; margin-top: 30px;"></p>
+        <h4 style="color: darkred; font-size: 130% ; margin-left: 20px;">N.B. : Course : total mark </h4>
+        <center><button type="button" onclick="calcGPA()" style="background-color: darkred; color: white; font-size: large; height: 30px; width: 180px;">Calculate GPA
+        </button></center>
+        <b><center><p id="gpa" style="font-size: 135%; margin-top: 30px; color: darkblue;"></p></center></b>
+        <script>
+            // This is the JavaSript Functions
+            var courses , grades , hours , i , j , text ;
+            var gpa = 0.0 , points = 0.0 , h = 0;
+            courses = ["Genetics" , "Math-0" , "Organic-Chemistry 2" , "OOP" , "Logic Design" , "Bioinformatics" , "AI"] ;
+            marks = [ 65 , 80 , 77 , 73 , 95 , 85 , 62] ;
+            hours = [3 , 3 , 2 , 3 , 3 , 2 , 3 ] ; 
+            len = courses.length ;
+            text = "<ul>" ;
+            for ( i = 0 ; i < len ; i++ )
+            {
+                text += "<li>" + courses[i] +" : " + marks[i] +"</li>"
+            }
+            text += "</ul>"
+            document.getElementById('text').innerHTML = text ;
+            function calcGPA()
+            {
+                for ( j = 0 ; j < len ; j++)
+                {
+                    h += hours[j] ;
+                    if ( marks[j] >= 90  )
+                    {
+                        points += 4 * hours[j] ;
+                    }
+                    else if ( marks[j] < 90 && marks[j] >= 85 )
+                    {
+                        points += 3.7 * hours[j] ;
+                    }
+                    else if ( marks[j] < 85 && marks[j] >= 80 )
+                    {
+                        points += 3.3 * hours[j] ;
+                    }
+                    else if ( marks[j] < 80 && marks[j] >= 75 )
+                    {
+                        points += 3 * hours[j] ;
+                    }
+                    else if ( marks[j] < 75 && marks[j] >= 70 )
+                    {
+                        points += 2.7 * hours[j] ;
+                    }
+                    else if ( marks[j] < 70 && marks[j] >= 65 )
+                    {
+                        points += 2.4 * hours[j] ;
+                    }
+                    else if ( marks[j] < 65 && marks[j] >= 60 )
+                    {                                                          
+                        points += 2.2 * hours[j] ;
+                    }
+                    else if ( marks[j] < 60 && marks[j] >= 50 )
+                    {
+                        points += 2 * hours[j] ;
+                    }
+                    else
+                    {
+                        points += 0 * hours[j] ;
+                    }
+                    gpa = points / h ;
+                }
+                document.getElementById('gpa').innerHTML = "Total GPA : " + gpa.toFixed(2) ;
+            }
+        </script>
+    </body>
+</html>
