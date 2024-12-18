@@ -1,4 +1,4 @@
-**Lab 2 : Commands**
+# Lab 2 : Tell Me Commands Part
 
 1. To remove a branch ( dev , test ) locally and remotely :
 
