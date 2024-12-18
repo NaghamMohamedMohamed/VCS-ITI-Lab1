@@ -19,7 +19,7 @@
 
    **- Remotely :**   git push origin --delete v7.0
 
-     ![robot](https://github.com/user-attachments/assets/1234e45c-29dd-427b-83a8-f1f088b5bc4b)
+     ![robot](robot.png) 
 
 
 
