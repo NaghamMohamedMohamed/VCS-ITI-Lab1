@@ -2,9 +2,9 @@
 
 1. To remove them locally and remotely :
 
-   **- Locally :** git branch -d dev  , git branch -d test
+   **- Locally :**   git branch -d dev  , git branch -d test
 
-   **- Remotely :** git push origin :dev  ,  git push origin :test
+   **- Remotely :**   git push origin :dev  ,  git push origin :test
    
 3. To checkout another branch without commit changes :
    
