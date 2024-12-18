@@ -3,6 +3,7 @@
 1. To remove a branch ( dev , test ) locally and remotely :
 
    **- Locally :**   git branch -d dev  , git branch -d test
+
    ( If they are not fully-merged on main and still want to delete them then write the same command by changing **d** into **D** )
 
    **- Remotely :**   git push origin :dev  ,  git push origin :test
