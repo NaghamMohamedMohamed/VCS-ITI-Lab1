@@ -19,6 +19,6 @@
 
    **- Remotely :**   git push origin --delete v7.0
 
-     ![removal ai _f7739bb2-e45b-44e7-838d-f29c3f591639-f170d1f1b3568e847bb26fadcb45f520](https://github.com/user-attachments/assets/022e6321-b3c0-4606-a843-079d4bb5128d)
+     
 
 
