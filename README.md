@@ -9,7 +9,7 @@
    **- Remotely :**   git push origin :dev  ,  git push origin :test
    
    
-3. To checkout another branch without commit changes :  git checkout -b dev 
+3. To checkout another branch without commit changes :  git stash
    
 4. To list tags :   git tag
    
